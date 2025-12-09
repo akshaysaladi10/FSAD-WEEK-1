@@ -1,0 +1,111 @@
+/* ===== Global Page Style ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* ===== Letter Container ===== */
+.letter {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Header / Address Part ===== */
+.letter-header {
+    margin-bottom: 20px;
+}
+
+.letter-header p {
+    margin-bottom: 4px;
+}
+
+/* “To” and “Through” can be bold */
+.letter-header .to,
+.letter-header .through {
+    font-weight: bold;
+}
+
+/* ===== Subject Line ===== */
+.subject {
+    margin: 20px 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* If you keep subject in multiple lines, they will stay clear */
+.subject span {
+    display: block;
+}
+
+/* ===== Body Text ===== */
+.letter-body {
+    margin-top: 10px;
+}
+
+.letter-body p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* ===== Closing & Signature Block ===== */
+.letter-footer {
+    margin-top: 30px;
+}
+
+.letter-footer .thanks {
+    margin-bottom: 15px;
+}
+
+.letter-footer .name-block {
+    margin-top: 10px;
+}
+
+.letter-footer .name-block p {
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+
+/* ===== Signature Lines ===== */
+.signature-block {
+    margin-top: 30px;
+}
+
+.signature-block p {
+    margin-bottom: 30px;
+}
+
+/* Makes label bold; space left for signs */
+.signature-block span.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* ===== Print Styling ===== */
+@media print {
+    body {
+        background-color: #ffffff;
+        padding: 0;
+    }
+
+    .letter {
+        max-width: 100%;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        padding: 20mm;
+    }
+}
